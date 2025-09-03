@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "e-commerce-b66a6",
+    "e-coomerce-app": "e-commerce-b66a6"
+  },
+  "targets": {},
+  "etags": {}
+}

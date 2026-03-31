@@ -139,6 +139,7 @@ class CartScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: isTotal ? 18 : 14,
               fontWeight: isTotal ? FontWeight.bold : FontWeight.normal,
+              color: Color(0xFF9775FA)
             ),
           ),
           Text(
@@ -146,6 +147,7 @@ class CartScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: isTotal ? 18 : 14,
               fontWeight: isTotal ? FontWeight.bold : FontWeight.normal,
+              color: Color(0xFF9775FA)
             ),
           ),
         ],

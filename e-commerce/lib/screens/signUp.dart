@@ -265,6 +265,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       controller: controller,
       keyboardType: keyboardType,
       obscureText: obscureText,
+      style: TextStyle(color: Colors.black),
       decoration: InputDecoration(
         hintText: hintText,
         border: OutlineInputBorder(

@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isDarkMode = false;
 
   final productService = ProductService();
-  final List<String> brands = ["All", "Nike", "Adidas", "Puma", "Apple", "Samsung"];
+  final List<String> brands = ["All", "Nike", "Adidas", "zara", "breshka", "cizaro"];
 
   int _currentIndex = 0;
 
@@ -84,7 +84,7 @@ class _HomeContentState extends State<HomeContent> {
   bool isDarkMode = false;
 
   final productService = ProductService();
-  final List<String> brands = ["All", "Nike", "Adidas", "Puma", "Apple", "Samsung"];
+  final List<String> brands = ["All", "Nike", "Adidas", "zara", "breshka", "cizaro"];
 
   @override
   Widget build(BuildContext context) {
@@ -382,9 +382,15 @@ class ProductCard extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis),
           ),
+      
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Text("\$${product.price.toStringAsFixed(2)}",
+                style: const TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold)),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Text("Rate : ${product.rate}",
                 style: const TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold)),
           ),
         ],
